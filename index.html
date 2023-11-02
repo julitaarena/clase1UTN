@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">  
+    <title>Clase 1</title>
+  
+</head>
+<body>
+    <h1>Formulario de Tareas</h1>
+    <form action="/action_page.php" id="cuerpoForm">
+      <div>
+      <div class="form-group">
+        <label for="numeroId">Id:</label>
+        <input type="text" class="form-control" id="numeroId">
+      </div>
+      <div class="form-group">
+        <label for="titulo">Título:</label>
+        <input type="text" class="form-control" id="titulo">
+      </div>
+      <div class="form-group">
+        <label for="descripcion">Descripción:</label>
+        <textarea type="text" class="form-control" id="descripcion"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="tiempo">Tiempo:</label>
+        <input type="number" class="form-control" id="tiempo">
+      </div>
+      <div class="form-group">
+        <label for="imagen">Imagen:</label>
+        <input type="file" class="form-control" id="imagen">
+      </div>
+      <div class="form-group">
+        <label for="responsable">Responsable:</label>
+        <input type="text" class="form-control" id="responsable">
+      </div>
+      <div class="form-group">
+        <label for="estado">Estado:</label>
+        <select id="estado" name="estado">
+          <option value="Pendiente">Pendiente</option>
+          <option value="En Proceso">En Proceso</option>
+          <option value="En Testing">En Testing</option>
+          <option value="Completada">Completada</option>
+        </select>
+        <label id="capturaEstado"></label>
+      </div>
+    
+      <button type="submit" class="btn btn-default" id="btn">Enviar</button>
+    </form>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script></body>
+    <script src="script.js"></script>
+    </html>
